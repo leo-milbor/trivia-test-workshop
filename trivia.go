@@ -35,14 +35,10 @@ func NewGame() *Game {
 		game.sportsQuestions = append(game.sportsQuestions,
 			fmt.Sprintf("Sports Question %d\n", i))
 		game.rockQuestions = append(game.rockQuestions,
-			game.CreateRockQuestion(i))
+			fmt.Sprintf("Rock Question %d\n", i))
 	}
 
 	return game
-}
-
-func (me *Game) CreateRockQuestion(index int) string {
-	return fmt.Sprintf("Rock Question %d\n", index)
 }
 
 func (me *Game) IsPlayable() bool {
