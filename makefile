@@ -2,7 +2,7 @@ run:
 	go run .
 
 test:
-	go test -vet=off .
+	go test -vet=off -v .
 
 coverage:
 	go test -vet=off -coverprofile=out/coverage.out .
